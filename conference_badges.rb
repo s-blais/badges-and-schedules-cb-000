@@ -3,7 +3,7 @@ def badge_maker (name)
 end
 
 def batch_badge_creator (attendees)
-  badge_batch = []
+  #badge_batch = [] (this isn't needed?)
   attendees.each do |attendee|
     name = attendee
     badge_batch.push (badge_maker (name))
@@ -12,7 +12,7 @@ def batch_badge_creator (attendees)
 end
 
 def assign_rooms (attendees)
-  room_assignments = []
+  #room_assignments = [] (this isn't needed?)
   attendees.each_with_index do |name, index|
     room_assignments.push ("Hello, #{name}! You'll be assigned to room #{index+1}!")
   end
